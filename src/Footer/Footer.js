@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { InputGroup, FormControl } from "react-bootstrap";
+import { InputGroup, FormControl, Button } from "react-bootstrap";
+import { FaFacebook, FaYoutube } from "react-icons/fa";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { ImInstagram } from "react-icons/im";
+import { HiOutlineMail } from "react-icons/hi";
 import "./Footer.css";
 
 export default function Footer() {
@@ -12,18 +16,18 @@ export default function Footer() {
           <div className="FollowUs">
             <div className="SocialMedia">
               <h4>Follow us on</h4>
-              <ul>
+              <ul className="icons">
                 <li>
-                  <Link></Link>
+                  <Link><FaFacebook></FaFacebook></Link>
                 </li>
                 <li>
-                  <Link></Link>
+                  <Link><AiFillTwitterCircle></AiFillTwitterCircle></Link>
                 </li>
                 <li>
-                  <Link></Link>
+                  <Link><ImInstagram></ImInstagram></Link>
                 </li>
                 <li>
-                  <Link></Link>
+                  <Link><FaYoutube></FaYoutube></Link>
                 </li>
               </ul>
             </div>
@@ -31,7 +35,7 @@ export default function Footer() {
               <h4>Get app exclusive deals</h4>
               {/* Add a phone icon to the download button */}
               <Link to="#">
-                <button className="btn">Download our App</button>
+                <Button className="btn">Download our App</Button>
               </Link>
             </div>
           </div>
@@ -96,18 +100,19 @@ export default function Footer() {
             tailored for you.
           </p>
           {/* Look for an email icon */}
-          <InputGroup className="mb-3">
-            <InputGroup.Text id="Email-icon">@</InputGroup.Text>
-            <FormControl
-              id = "input"
-              placeholder="Enter email address"
-              aria-label="Email"
-              aria-describedby="Email-icon"
-            />
-          </InputGroup>
-          <Link>
-            <button>Subscribe</button>
-          </Link>
+          <div className="subscription-form">
+            <div><HiOutlineMail></HiOutlineMail></div>
+            <InputGroup className="mb-3">
+              <FormControl
+                placeholder="Enter email address"
+                aria-label="Recipient's email"
+                aria-describedby="basic-addon2"
+              />
+              <Button variant="outline-secondary" id="button-addon2">
+                Subscribe
+              </Button>
+            </InputGroup>
+          </div>
         </div>
       </div>
       {/* Copyright div */}

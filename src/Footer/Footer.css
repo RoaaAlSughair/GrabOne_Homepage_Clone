@@ -1,24 +1,43 @@
 /* Fonts used:
 MuseoSans,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif; */
 
-#input{
-    border-left: 0;
+.btn{
+    background-color: #01b2ee;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0 rgb(1 178 238 / 50%);
 }
 
-#Email-icon{
-    background-color: white;
-    padding: 0 0 0 12px;
-    border-right: 0;
+.icons{
+    flex-direction: row;
+    gap: 5px;
+    font-size: 1.5rem;
+}
+
+.Newsletter{
+    width: 22rem;
+}
+
+.subscription-form{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    font-size: 1.5rem;
+    color: grey;
 }
 
 .FirstFooter{
     display: flex;
     flex-direction: row;
+    padding: 1rem;
+    gap: 3rem;
 }
 
 .Columns{
     display: flex;
     flex-direction: row;
+    gap: 2rem;
 }
 
 #copyright{
@@ -34,6 +53,7 @@ MuseoSans,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantare
 
 h4{
     font-weight: 700;
+    font-size: 1rem;
 }
 
 a{
@@ -46,8 +66,8 @@ ul{
     list-style: none;
     display: flex;
     flex-direction: column;
+    padding-left: 0;
 }
-
 
 @media(max-width: 48rem){
     #copyright{
@@ -57,5 +77,9 @@ ul{
 
     .FirstFooter{
         flex-direction: column-reverse;
+    }
+
+    .Newsletter{
+        width: 100%
     }
 }
