@@ -1,0 +1,56 @@
+.First-nav{
+    background-color: #01b2ee;
+    font-size: 30px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+span{
+    font-size: 15px;
+}
+
+.nav-link{
+    display: flex;
+    align-content: center;
+}
+
+.container{
+    padding: 7.5px;
+    width: 100%;
+    margin: 0;
+}
+
+.brand{
+    font-weight: 750;
+    font-size: 2rem;
+}
+
+.brand-container{
+    width: fit-content;
+}
+
+.second-brand{
+    border-left: 1px solid #fff;
+    width: fit-content;
+    padding: 0 0 0 15px;
+}
+
+.Second-nav{
+    flex-direction: row;
+    padding: 10px;
+    /* Second number is for the bottom border. The last number is for shadow blurring effect*/
+    box-shadow: 0 1px 5px #4f5864;
+}
+
+.Search-bar{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.search-icon{
+    color: grey;
+}
+
+@media (max-width: 1024px) {}
