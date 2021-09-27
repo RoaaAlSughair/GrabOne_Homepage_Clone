@@ -1,13 +1,13 @@
 /* I need to: 
-1- get rid of the extra space created by dropdown lists
+1- Make the whole thing responsive
 2- stretch the navbar to reach the end of the page
 3- Do the box shadow for the second navbar
-4- Make the whole thing responsive
 */
 
 .First-nav{
     display: flex;
     background-color: #01b2ee;
+    align-items: center;
     font-size: 30px;
     padding: 0;
     margin: 0;
@@ -15,6 +15,7 @@
 
 .dropdown-nav-link{
     display: flex;
+    height: fit-content;
     flex-direction: row;
     gap: 5px;
     justify-content: start;
@@ -23,7 +24,18 @@
 .nav-links{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* To control the height of dropdown lists */
+.navbar-nav .nav-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    height: 45px;
     margin: 0;
     padding: 0;
 }
@@ -34,7 +46,7 @@
 
 .container{
     padding: 7.5px;
-    width:auto;
+    width: auto;
     margin: 0;
 }
 
@@ -48,6 +60,7 @@
     width: fit-content;
 }
 
+/* To get rid of the built-in arrow */
 .dropdown-toggle::after{
     border: 0;
 }
