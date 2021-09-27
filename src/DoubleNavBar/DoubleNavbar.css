@@ -1,33 +1,55 @@
+/* I need to: 
+1- get rid of the extra space created by dropdown lists
+2- stretch the navbar to reach the end of the page
+3- Do the box shadow for the second navbar
+4- Make the whole thing responsive
+*/
+
 .First-nav{
+    display: flex;
     background-color: #01b2ee;
     font-size: 30px;
-    justify-content: space-between;
     padding: 0;
     margin: 0;
 }
 
-span{
-    font-size: 15px;
+.dropdown-nav-link{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: start;
 }
 
-.nav-link{
+.nav-links{
     display: flex;
-    align-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-title{
+    font-size: 15px;
 }
 
 .container{
     padding: 7.5px;
-    width: 100%;
+    width:auto;
     margin: 0;
 }
 
 .brand{
-    font-weight: 750;
+    font-weight: 900;
     font-size: 2rem;
+    margin: 0;
 }
 
 .brand-container{
     width: fit-content;
+}
+
+.dropdown-toggle::after{
+    border: 0;
 }
 
 .second-brand{
@@ -39,8 +61,7 @@ span{
 .Second-nav{
     flex-direction: row;
     padding: 10px;
-    /* Second number is for the bottom border. The last number is for shadow blurring effect*/
-    box-shadow: 0 1px 5px #4f5864;
+    /* Must figure out how box shadowing works */
 }
 
 .Search-bar{

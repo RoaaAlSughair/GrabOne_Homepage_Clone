@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
-import { FaFacebook, FaYoutube } from "react-icons/fa";
-import { AiFillTwitterCircle } from "react-icons/ai";
+import { FaYoutube, FaTwitter } from "react-icons/fa";
+import { FiFacebook } from "react-icons/fi";
 import { ImInstagram } from "react-icons/im";
 import { HiOutlineMail } from "react-icons/hi";
 import "./Footer.css";
@@ -13,15 +13,17 @@ export default function Footer() {
       {/* The four columns */}
       <div className="FirstFooter">
         <div className="Columns">
+          {/* Follow us - column 1*/}
           <div className="FollowUs">
+            {/* Social media icons */}
             <div className="SocialMedia">
               <h4>Follow us on</h4>
               <ul className="icons">
                 <li>
-                  <Link><FaFacebook></FaFacebook></Link>
+                  <Link><FiFacebook></FiFacebook></Link>
                 </li>
                 <li>
-                  <Link><AiFillTwitterCircle></AiFillTwitterCircle></Link>
+                  <Link><FaTwitter></FaTwitter></Link>
                 </li>
                 <li>
                   <Link><ImInstagram></ImInstagram></Link>
@@ -31,6 +33,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
+            {/* Download App */}
             <div className="DownloadApp">
               <h4>Get app exclusive deals</h4>
               {/* Add a phone icon to the download button */}
@@ -39,6 +42,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
+          {/* Column 2 */}
           <div className="GrabOne">
             <h4>GrabOne</h4>
             <ul>
@@ -62,6 +66,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          {/* Column 3 */}
           <div className="MyAccount">
             <h4>My Account</h4>
             <ul>
@@ -79,6 +84,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          {/* Column 4 */}
           <div className="Merchants">
             <h4>Merchants</h4>
             <ul>
@@ -99,6 +105,7 @@ export default function Footer() {
             Sign up for our daily emails and we'll send you all the best deals,
             tailored for you.
           </p>
+          {/* Subscribe form */}
           {/* Look for an email icon */}
           <div className="subscription-form">
             <div><HiOutlineMail></HiOutlineMail></div>

@@ -1,0 +1,35 @@
+body {
+  font-family: 'work-sans', sans-serif;
+}
+
+.banner {
+  background-color: #f4f7fb;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 15px 20px;
+}
+
+.banner-image {
+  max-width: 96.5vw;
+}
+
+.announcement {
+  padding-top: 20px;
+}
+
+.update {
+  font-weight: 700;
+}
+
+.initial-display {
+  background-color: #f4f7fb;
+  padding: 0 1rem 1rem;
+}
+
+.sidebar{
+    background-color: white;
+    width: fit-content;
+    padding: 1rem;
+}
