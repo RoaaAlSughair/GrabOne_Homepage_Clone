@@ -29,80 +29,82 @@ export default function DoubleNavbar() {
             </Navbar.Brand>
             {/* Links and dropdown lists */}
           </Container>
-          <Nav as="ul" className="nav-links">
-            {/* Dropdown 1 */}
-            <Nav.Item>
-              <NavDropdown
-                title={
+          <Container className="all-sans-logo">
+            <Nav as="ul" className="nav-links">
+              {/* Dropdown 1 */}
+              <Nav.Item>
+                <NavDropdown
+                  title={
+                    <div className="dropdown-nav-link">
+                      <HiOutlineLocationMarker></HiOutlineLocationMarker>
+                      <p className="dropdown-title">Auckland</p>
+                      <HiChevronDown></HiChevronDown>
+                    </div>
+                  }
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Something
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav.Item>
+              {/* Link 1 */}
+              <Nav.Item>
+                <Nav.Link href="#home">
+                  <FiHeart></FiHeart>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="#link">
+                  <FiShoppingCart></FiShoppingCart>
+                </Nav.Link>
+              </Nav.Item>
+              {/* Dropdown 2 */}
+              <Nav.Item>
+                <NavDropdown
+                  title={
+                    <div>
+                      <BsPerson></BsPerson>
+                      <HiChevronDown></HiChevronDown>
+                    </div>
+                  }
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item href="#action/3.1">
+                    My Account
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Gifts</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    My Subscriptions
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.4">
+                    My Purchases
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.4">Login</NavDropdown.Item>
+                </NavDropdown>
+              </Nav.Item>
+              {/* Link 2 */}
+              <Nav.Item>
+                <Nav.Link href="#link">
                   <div className="dropdown-nav-link">
-                    <HiOutlineLocationMarker></HiOutlineLocationMarker>
-                    <p className="dropdown-title">Auckland</p>
-                    <HiChevronDown></HiChevronDown>
+                    <HiOutlineMail></HiOutlineMail>
+                    <p className="dropdown-title">Subscribe</p>
                   </div>
-                }
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav.Item>
-            {/* Link 1 */}
-            <Nav.Item>
-              <Nav.Link href="#home">
-                <FiHeart></FiHeart>
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#link">
-                <FiShoppingCart></FiShoppingCart>
-              </Nav.Link>
-            </Nav.Item>
-            {/* Dropdown 2 */}
-            <Nav.Item>
-              <NavDropdown
-                title={
-                  <div>
-                    <BsPerson></BsPerson>
-                    <HiChevronDown></HiChevronDown>
-                  </div>
-                }
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1">
-                  My Account
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Gifts</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  My Subscriptions
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                  My Purchases
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">Login</NavDropdown.Item>
-              </NavDropdown>
-            </Nav.Item>
-            {/* Link 2 */}
-            <Nav.Item>
-              <Nav.Link href="#link">
-                <div className="dropdown-nav-link">
-                  <HiOutlineMail></HiOutlineMail>
-                  <p className="dropdown-title">Subscribe</p>
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
-          {/* Powered by NZ ME logo */}
-          <Container className="second-brand">
-            <img src="https://new-cdn.grabone.co.nz/static/img/icon/powered_by_nzme_short.22da364cd455.png" />
+                </Nav.Link>
+              </Nav.Item>
+              {/* Powered by NZ ME logo */}
+              <Container className="second-brand">
+                <img src="https://new-cdn.grabone.co.nz/static/img/icon/powered_by_nzme_short.22da364cd455.png" />
+              </Container>
+            </Nav>
           </Container>
         </Container>
       </Navbar>
