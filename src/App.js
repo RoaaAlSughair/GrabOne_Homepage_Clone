@@ -1,7 +1,9 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import HeroBanner from "./Hero Section/HeroSection";
+import { location, category, merchandise } from "./data";
+import "bootstrap/dist/css/bootstrap.min.css";
 import DoubleNavbar from "./DoubleNavBar/DoubleNavbar";
+import HeroBanner from "./Hero Section/HeroSection";
+import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
     <div className="App">
       <DoubleNavbar />
       <HeroBanner />
+      <Main categories={category} items={merchandise} />
       <Footer />
     </div>
   );
