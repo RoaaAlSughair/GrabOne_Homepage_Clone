@@ -1,15 +1,55 @@
 .btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
     background-color: #01b2ee;
+    border-color: #01b2ee;
     color: #fff;
     font-size: 1rem;
     border-radius: 5px;
-    box-shadow: 0 0 8px 0 rgb(1 178 238 / 50%);
+    padding: 5px 10px;
+}
+
+.btn-icon{
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    background-color: #3cbff3;
+    border-color: #3cbff3;
+}
+
+.btn::after{
+    box-shadow: none;
+}
+
+.download-btn{
+    /* padding:  */
 }
 
 .icons{
     flex-direction: row;
-    gap: 5px;
-    font-size: 1.5rem;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.social-media-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4f5864;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.social-media-icon:hover{
+    background-color: #3cbff3;
+}
+
+.icon-link{
+    color: white;
 }
 
 .Newsletter{
@@ -37,6 +77,10 @@
     gap: 2rem;
 }
 
+.footer-link{
+    color: #1eb3ec;
+}
+
 #copyright{
     display: flex;
     font-size: 1rem;
@@ -54,7 +98,7 @@ h4{
 }
 
 a{
-    color: #1eb3ec;
+    color: #4f5864;
     text-decoration: none;
     cursor: pointer;
 }

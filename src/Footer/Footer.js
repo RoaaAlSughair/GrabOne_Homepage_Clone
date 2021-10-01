@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
-import { FaYoutube, FaTwitter } from "react-icons/fa";
-import { FiFacebook } from "react-icons/fi";
+import { FaYoutube, FaTwitter, FaFacebookF } from "react-icons/fa";
 import { ImInstagram } from "react-icons/im";
 import { HiOutlineMail } from "react-icons/hi";
+import { AiOutlineMobile } from "react-icons/ai";
 import "./Footer.css";
 
 export default function Footer() {
@@ -20,16 +20,24 @@ export default function Footer() {
               <h4>Follow us on</h4>
               <ul className="icons">
                 <li>
-                  <Link><FiFacebook></FiFacebook></Link>
+                  <div  className="social-media-icon">
+                  <Link><FaFacebookF className="icon-link"></FaFacebookF></Link>
+                  </div>
                 </li>
                 <li>
-                  <Link><FaTwitter></FaTwitter></Link>
+                <div  className="social-media-icon">
+                  <Link><FaTwitter className="icon-link"></FaTwitter></Link>
+                  </div>
                 </li>
                 <li>
-                  <Link><ImInstagram></ImInstagram></Link>
+                <div  className="social-media-icon">
+                  <Link><ImInstagram className="icon-link"></ImInstagram></Link>
+                  </div>
                 </li>
                 <li>
-                  <Link><FaYoutube></FaYoutube></Link>
+                <div  className="social-media-icon">
+                  <Link><FaYoutube className="icon-link"></FaYoutube></Link>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -38,7 +46,7 @@ export default function Footer() {
               <h4>Get app exclusive deals</h4>
               {/* Add a phone icon to the download button */}
               <Link to="#">
-                <Button className="btn">Download our App</Button>
+                <Button className="btn"><AiOutlineMobile className="btn-icon"></AiOutlineMobile> Download our App</Button>
               </Link>
             </div>
           </div>
@@ -115,7 +123,7 @@ export default function Footer() {
                 aria-label="Recipient's email"
                 aria-describedby="basic-addon2"
               />
-              <Button variant="outline-secondary" id="button-addon2">
+              <Button className="download-btn" id="button-addon2">
                 Subscribe
               </Button>
             </InputGroup>
@@ -124,7 +132,7 @@ export default function Footer() {
       </div>
       {/* Copyright div */}
       <div id="copyright">
-        <Link to="#">Privacy Policy</Link>
+        <Link className="footer-link" to="#">Privacy Policy</Link>
         <p>&copy; 2021 GrabOne Limited</p>
         <img src="https://new-cdn.grabone.co.nz/static/img/icon/powered_by_nzme_long.d08e62aa63ff.png" />
       </div>

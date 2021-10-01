@@ -10,7 +10,7 @@ export default function Section(props) {
     <section>
       <div className="category">
       <h3>{category}</h3>
-      <Button variant="outline-secondary" id="button-addon2">
+      <Button id="button-addon2">
         View more <BiChevronRight></BiChevronRight>
       </Button>
       </div>

@@ -1,0 +1,22 @@
+.card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  white-space: normal;
+}
+
+.small-card-title{
+    font-size: 1rem;
+}
+
+.card-provider{
+    font-size: 0.75rem;
+    color: #1eb3ec;
+}
+
+.card-city{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
