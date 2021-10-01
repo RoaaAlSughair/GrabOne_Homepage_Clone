@@ -13,6 +13,9 @@ const location = [
   "Nelson - Malborough",
   "Queenstown - Wanaka",
   "Dunedin - Invercargill",
+  "Albany",
+  "Thorndon",
+  "Picton",
 ];
 
 const category = [
@@ -161,7 +164,7 @@ const merchandise = [
     IsNew: false,
     Title: "75-Minute Pamper Package with Hot Stone Massage & Relaxing Facial",
     Provider: "Skinmatic Clinic",
-    City: "Albany",
+    City: location[12],
     BuyingTimes: 3,
     price: 109,
     button: false,
@@ -236,7 +239,7 @@ const merchandise = [
     IsNew: false,
     Title: "One-Night Wellington Weekend Stay for Two Adults in a Classic King Room incl. Breakfast, Welcome Drinks on Arrival, Gym Access to City Fitness Thorndon, 20% off Food & Beverages",
     Provider: "Atura Wellington",
-    City: "Thorndon",
+    City: location[13],
     BuyingTimes: "",
     price: "364",
     button: false,
@@ -266,7 +269,7 @@ const merchandise = [
     Title:
       "One-Night 5-Star Luxury Canterbury Getaway for Two incl. Two-Course Dinner, Bubbles on Arrival, Daily Breakfast, 20% off a Round of Golf, Early Check-In & Late Check-Out - Options for Four People or Family & Two-Night Stays Available",
     Provider: "Picton Yacht Club",
-    City: "Picton",
+    City: location[14],
     BuyingTimes: "140",
     price: "379",
     button: false,
@@ -295,7 +298,7 @@ const merchandise = [
     Title:
       "Football Birthday Party For Up to 10 Children - Options for Rookie, Pro or All Star Packages",
     Provider: "FootballFix Albany",
-    City: "Albany",
+    City: location[12],
     BuyingTimes: "",
     price: "99",
     button: false,
@@ -376,7 +379,7 @@ const merchandise = [
     IsNew: true,
     Title: "Silk Filled Eco-Lux Duvet ",
     Provider: "",
-    City: "Bdirect",
+    City: null,
     BuyingTimes: "2",
     price: "106",
     button: false,
