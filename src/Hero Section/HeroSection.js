@@ -47,7 +47,7 @@ export default function HeroSection(props) {
         <Card.Footer>420$</Card.Footer>
       </Card>
       <Card key={2}>
-        <Card.Img variant="top" src=       "https://main-cdn.grabone.co.nz/goimage/fullsize/32286725841603f9c33fc6257a8b797d24738be8.jpg" />
+        <Card.Img variant="top" src= "https://main-cdn.grabone.co.nz/goimage/fullsize/32286725841603f9c33fc6257a8b797d24738be8.jpg" />
         <Card.Body>
           <Card.Title className="card-title"><h3 className="small-card-title">Mesh Reusable Face Mask</h3></Card.Title>
           <Card.Subtitle>
