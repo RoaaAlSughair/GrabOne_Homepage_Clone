@@ -12,6 +12,7 @@
     background-color: #f4f7fb;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1rem;
+    row-gap: 0.5rem;
     padding: 1rem;
 }
 

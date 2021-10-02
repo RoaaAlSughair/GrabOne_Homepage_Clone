@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { InputGroup, FormControl, Button, Card } from "react-bootstrap";
+import { HiOutlineMail } from "react-icons/hi";
 import "./HeroSection.css";
 
-export default function HeroSection() {
+export default function HeroSection(props) {
+  const { categories } = props;
   return (
     <div>
       {/* Spring banner */}
@@ -27,9 +30,49 @@ export default function HeroSection() {
         <aside className="sidebar">
           <header>Discover</header>
           <ul>
-            <li>Featured Auckland Deals</li>
+            {categories.map((elem, i) => {
+              return <li key={i}>{elem}</li>
+            })}
           </ul>
         </aside>
+        <Card key={1}>
+        <Card.Img variant="top" src= "https://main-cdn.grabone.co.nz/goimage/fullsize/d3162da6dbd501bca97675ef50ed44b23cffd04f.jpg" />
+        <Card.Body>
+          <Card.Title className="card-title"><h3 className="small-card-title">Inclusive Hanmer Springs Gateway</h3></Card.Title>
+          <Card.Subtitle>
+          <h4 className="card-provider">Hanmer Springs Hotel</h4>
+          </Card.Subtitle>
+          <Card.Text><h4 className="card-city">Christchurch</h4></Card.Text>
+        </Card.Body>
+        <Card.Footer>420$</Card.Footer>
+      </Card>
+      <Card key={2}>
+        <Card.Img variant="top" src=       "https://main-cdn.grabone.co.nz/goimage/fullsize/32286725841603f9c33fc6257a8b797d24738be8.jpg" />
+        <Card.Body>
+          <Card.Title className="card-title"><h3 className="small-card-title">Mesh Reusable Face Mask</h3></Card.Title>
+          <Card.Subtitle>
+          <br />
+          </Card.Subtitle>
+          <Card.Text><br /></Card.Text>
+        </Card.Body>
+        <Card.Footer>9$</Card.Footer>
+      </Card>
+      </div>
+      <div className="subscribe">
+      Get the best deals delivered direct to your inbox each day
+      <InputGroup className="Newsletter">
+            <InputGroup.Text id="basic-addon1">
+            <HiOutlineMail className="subscribe-by-email-icon"></HiOutlineMail>
+            </InputGroup.Text>
+              <FormControl
+                placeholder="Enter email address"
+                aria-label="Recipient's email"
+                aria-describedby="basic-addon2"
+              />
+              <Button id="button-addon2">
+                Subscribe
+              </Button>
+            </InputGroup>
       </div>
     </div>
   );

@@ -16,6 +16,7 @@
     flex-direction: row;
     gap: 5px;
     justify-content: start;
+    align-self: baseline;
 }
 
 .nav-links{
@@ -30,6 +31,10 @@
     flex-direction: row;
     align-items: center;
     height: 45px;
+}
+
+.nav-link{
+    height: 2.25rem;
 }
 
 .navbar{
@@ -67,7 +72,9 @@
 }
 
 .Second-nav{
+    display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     padding: 10px;
     /* Must figure out how box shadowing works */
 }
@@ -79,7 +86,8 @@
 }
 
 .search-icon{
-    color: grey;
+    font-size: 1.5rem;
+    color: #4f5864;
 }
 
 .all-sans-logo{

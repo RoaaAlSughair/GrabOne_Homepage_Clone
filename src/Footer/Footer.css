@@ -25,7 +25,10 @@
 }
 
 .download-btn{
-    /* padding:  */
+    padding-left: 0;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .icons{
@@ -56,15 +59,13 @@
     width: 22rem;
 }
 
-.subscription-form{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+.subscribe-by-email-icon{
     font-size: 1.5rem;
-    color: grey;
+    color: #4f5864;
 }
 
 .FirstFooter{
+    background-color: white;
     display: flex;
     flex-direction: row;
     padding: 1rem;
@@ -82,6 +83,7 @@
 }
 
 #copyright{
+    background-color: white;
     display: flex;
     font-size: 1rem;
     flex-direction: row;

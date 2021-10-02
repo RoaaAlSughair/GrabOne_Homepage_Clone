@@ -16,9 +16,10 @@ import {
 import { BsPerson } from "react-icons/bs";
 import "./DoubleNavbar.css";
 
-export default function DoubleNavbar() {
+export default function DoubleNavbar(props) {
+  const { locations, categories } = props;
   return (
-    <nav>
+    <div>
       {/* Blue nav */}
       <Navbar className="First-nav" variant="dark" expand="lg">
         <Container className="container">
@@ -43,17 +44,11 @@ export default function DoubleNavbar() {
                   }
                   id="basic-nav-dropdown"
                 >
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
+                  {locations.map((elem, i) => {
+                    return (
+                      <NavDropdown.Item eventKey={i}>{elem}</NavDropdown.Item>
+                    );
+                  })}
                 </NavDropdown>
               </Nav.Item>
               {/* Link 1 */}
@@ -109,7 +104,7 @@ export default function DoubleNavbar() {
         </Container>
       </Navbar>
       {/* White nav */}
-      <Nav as="ul" className="Second-nav">
+      <Nav className="Second-nav">
         <Nav.Item>
           {/* This dropdown needs lots of dynamic rendering plus using nested dropdown lists */}
           <NavDropdown
@@ -120,13 +115,13 @@ export default function DoubleNavbar() {
             }
             id="nav-dropdown"
           >
-            <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
-            <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
-            <NavDropdown.Item eventKey="4.3">
-              Something else here
-            </NavDropdown.Item>
+            {categories.map((elem, i) => {
+              return <NavDropdown.Item eventKey={i}>{elem}</NavDropdown.Item>;
+            })}
             <NavDropdown.Divider />
-            <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+            <NavDropdown.Item eventKey="4.4">
+              Browse All Categories
+            </NavDropdown.Item>
           </NavDropdown>
         </Nav.Item>
         {/* Links */}
@@ -156,6 +151,6 @@ export default function DoubleNavbar() {
           </InputGroup>
         </Nav.Item>
       </Nav>
-    </nav>
+    </div>
   );
 }

@@ -42,7 +42,7 @@ export default function Footer() {
               </ul>
             </div>
             {/* Download App */}
-            <div className="DownloadApp">
+            <div className="download-btn">
               <h4>Get app exclusive deals</h4>
               {/* Add a phone icon to the download button */}
               <Link to="#">
@@ -114,20 +114,19 @@ export default function Footer() {
             tailored for you.
           </p>
           {/* Subscribe form */}
-          {/* Look for an email icon */}
-          <div className="subscription-form">
-            <div><HiOutlineMail></HiOutlineMail></div>
-            <InputGroup className="mb-3">
+            <InputGroup>
+            <InputGroup.Text id="basic-addon1">
+            <HiOutlineMail className="subscribe-by-email-icon"></HiOutlineMail>
+            </InputGroup.Text>
               <FormControl
                 placeholder="Enter email address"
                 aria-label="Recipient's email"
                 aria-describedby="basic-addon2"
               />
-              <Button className="download-btn" id="button-addon2">
+              <Button id="button-addon2">
                 Subscribe
               </Button>
             </InputGroup>
-          </div>
         </div>
       </div>
       {/* Copyright div */}

@@ -9,8 +9,8 @@ import Footer from "./Footer/Footer";
 function App() {
   return (
     <div className="App">
-      <DoubleNavbar />
-      <HeroBanner />
+      <DoubleNavbar locations={location} categories={category}/>
+      <HeroBanner categories={category}/>
       <Main categories={category} items={merchandise} />
       <Footer />
     </div>

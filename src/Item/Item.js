@@ -6,7 +6,7 @@ export default function Item(props) {
   const { item } = props;
 
   return (
-      <Card>
+      <Card key={item.id}>
         <Card.Img variant="top" src={item.Image} />
         <Card.Body>
           <Card.Title className="card-title"><h3 className="small-card-title">{item.Title}</h3></Card.Title>
