@@ -1,100 +1,130 @@
 /* I need to: 
 1- Make the whole thing responsive
-2- stretch the navbar to reach the end of the page
-3- Do the box shadow for the second navbar
+2- Do the box shadow for the second navbar
 */
-.First-nav{
-    display: flex;
-    background-color: #01b2ee;
-    align-items: center;
-    font-size: 30px;
+
+.First-nav {
+  display: flex;
+  background-color: #01b2ee;
+  align-items: center;
+  font-size: 30px;
 }
 
-.dropdown-nav-link{
-    display: flex;
-    height: fit-content;
-    flex-direction: row;
-    gap: 5px;
-    justify-content: start;
-    align-self: baseline;
+.dropdown-nav-link {
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: start;
 }
 
-.nav-links{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /* To control the height of dropdown lists */
-.navbar-nav .nav-link{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 45px;
+.navbar-nav .nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 45px;
 }
 
-.nav-link{
-    height: 2.25rem;
+.nav-link {
+  height: 2.25rem;
 }
 
-.navbar{
-    padding: 0;
+.navbar {
+  padding: 0.25rem 1rem;
 }
 
-.dropdown-title{
-    font-size: 15px;
-    margin: 0;
+.dropdown-title {
+  font-size: 15px;
+  margin: 0;
 }
 
-.container{
-    padding: 3.5px;
-
+.container {
+  padding: 0;
 }
 
-.brand{
-    font-weight: 900;
-    font-size: 1.5rem;
+.brand {
+  font-weight: 900;
+  font-size: 1.75rem;
 }
 
-.brand-container{
-    width: fit-content;
+.brand-container {
+  width: fit-content;
 }
 
 /* To get rid of the built-in arrow */
-.dropdown-toggle::after{
-    border: 0;
+.dropdown-toggle::after {
+  border: 0;
 }
 
-.second-brand{
-    border-left: 1px solid #fff;
-    width: fit-content;
-    padding-left: 0.5rem;
+.second-brand {
+  border-left: 1px solid #fff;
+  width: fit-content;
+  padding-left: 0.5rem;
 }
 
-.Second-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 10px;
-    /* Must figure out how box shadowing works */
+.Second-nav {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+  /* Must figure out how box shadowing works */
 }
 
-.Search-bar{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+.Search-bar {
+  align-content: center;
 }
 
-.search-icon{
-    font-size: 1.5rem;
-    color: #4f5864;
+.search-icon {
+  font-size: 1.5rem;
+  color: #4f5864;
 }
 
-.all-sans-logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+.all-sans-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-@media (max-width: 1024px) {}
+.dropdown-category {
+  font-size: 15px;
+}
+
+.dropdown-last-option {
+  color: #01b2ee;
+  font-weight: 500;
+}
+
+.second-nav-links {
+  color: #4f5864;
+  font-weight: 500;
+}
+
+.all-sans-input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: inherit;
+  }
+}
+
+@media (max-width: 1024px) {
+}

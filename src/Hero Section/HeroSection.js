@@ -28,12 +28,14 @@ export default function HeroSection(props) {
       {/* Sidebar (incomplete) */}
       <div className="initial-display">
         <aside className="sidebar">
-          <header>Discover</header>
-          <ul>
+          <div className="sidebar-title">Discover</div>
+          <div className="sidebar-categories">
+          <ul className="side-categories">
             {categories.map((elem, i) => {
-              return <li key={i}>{elem}</li>
+              return <li className="side-category" key={i}>{elem}</li>
             })}
           </ul>
+          </div>
         </aside>
         <Card key={1}>
         <Card.Img variant="top" src= "https://main-cdn.grabone.co.nz/goimage/fullsize/d3162da6dbd501bca97675ef50ed44b23cffd04f.jpg" />
@@ -59,7 +61,7 @@ export default function HeroSection(props) {
       </Card>
       </div>
       <div className="subscribe">
-      Get the best deals delivered direct to your inbox each day
+      <p className="order-to-subscribe">Get the best deals delivered direct to your inbox each day</p>
       <InputGroup className="Newsletter">
             <InputGroup.Text id="basic-addon1">
             <HiOutlineMail className="subscribe-by-email-icon"></HiOutlineMail>

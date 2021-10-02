@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../Category section/Section";
+import Section from "../Section/Section";
 
 export default function Main(props) {
   const { categories, items } = props;

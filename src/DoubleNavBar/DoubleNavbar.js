@@ -14,6 +14,7 @@ import {
   HiChevronDown,
 } from "react-icons/hi";
 import { BsPerson } from "react-icons/bs";
+import { BiChevronRight } from "react-icons/bi";
 import "./DoubleNavbar.css";
 
 export default function DoubleNavbar(props) {
@@ -66,7 +67,7 @@ export default function DoubleNavbar(props) {
               <Nav.Item>
                 <NavDropdown
                   title={
-                    <div>
+                    <div className="dropdown-nav-link">
                       <BsPerson></BsPerson>
                       <HiChevronDown></HiChevronDown>
                     </div>
@@ -105,37 +106,53 @@ export default function DoubleNavbar(props) {
       </Navbar>
       {/* White nav */}
       <Nav className="Second-nav">
-        <Nav.Item>
-          {/* This dropdown needs lots of dynamic rendering plus using nested dropdown lists */}
-          <NavDropdown
-            title={
-              <div>
-                Browse Categories <HiChevronDown></HiChevronDown>
-              </div>
-            }
-            id="nav-dropdown"
-          >
-            {categories.map((elem, i) => {
-              return <NavDropdown.Item eventKey={i}>{elem}</NavDropdown.Item>;
-            })}
-            <NavDropdown.Divider />
-            <NavDropdown.Item eventKey="4.4">
-              Browse All Categories
-            </NavDropdown.Item>
-          </NavDropdown>
-        </Nav.Item>
-        {/* Links */}
-        <Nav.Item as="li">
-          <Nav.Link href="#">What's New</Nav.Link>
-        </Nav.Item>
-        <Nav.Item as="li">
-          <Nav.Link href="javascript:void(0);">Trending</Nav.Link>
-        </Nav.Item>
-        <Nav.Item as="li">
-          <Nav.Link href="javascript:void(0);">For You</Nav.Link>
-        </Nav.Item>
-        <Nav.Item as="li">
-          <Nav.Link href="javascript:void(0);">Shop Products</Nav.Link>
+        <Nav.Item as="ul" className="all-sans-input-group">
+          <Nav.Item as="li">
+            {/* This dropdown needs lots of dynamic rendering */}
+            <NavDropdown
+              title={
+                <Nav.Link className="second-nav-links">
+                  Browse Categories <HiChevronDown></HiChevronDown>
+                </Nav.Link>
+              }
+            >
+              {categories.map((elem, i) => {
+                return (
+                  <NavDropdown.Item className="dropdown-category" eventKey={i}>
+                    {elem} <BiChevronRight></BiChevronRight>
+                  </NavDropdown.Item>
+                );
+              })}
+              <NavDropdown.Divider />
+              <NavDropdown.Item
+                className="dropdown-category dropdown-last-option"
+                eventKey="4.4"
+              >
+                Browse All Categories
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav.Item>
+          {/* Links */}
+          <Nav.Item as="li">
+            <Nav.Link className="second-nav-links" href="#">
+              What's New
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item as="li">
+            <Nav.Link className="second-nav-links" href="#">
+              Trending
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item as="li">
+            <Nav.Link className="second-nav-links" href="#">
+              For You
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item as="li">
+            <Nav.Link className="second-nav-links" href="#">
+              Shop Products
+            </Nav.Link>
+          </Nav.Item>
         </Nav.Item>
         {/* Search bar */}
         <Nav.Item>
