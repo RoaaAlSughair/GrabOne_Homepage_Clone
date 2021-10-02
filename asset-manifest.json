@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Task_1_Merwas/static/css/main.c336b439.chunk.css",
+    "main.js": "/Task_1_Merwas/static/js/main.1c94e0e9.chunk.js",
+    "main.js.map": "/Task_1_Merwas/static/js/main.1c94e0e9.chunk.js.map",
+    "runtime-main.js": "/Task_1_Merwas/static/js/runtime-main.b1fedf07.js",
+    "runtime-main.js.map": "/Task_1_Merwas/static/js/runtime-main.b1fedf07.js.map",
+    "static/css/2.f2512455.chunk.css": "/Task_1_Merwas/static/css/2.f2512455.chunk.css",
+    "static/js/2.57d75acf.chunk.js": "/Task_1_Merwas/static/js/2.57d75acf.chunk.js",
+    "static/js/2.57d75acf.chunk.js.map": "/Task_1_Merwas/static/js/2.57d75acf.chunk.js.map",
+    "index.html": "/Task_1_Merwas/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/Task_1_Merwas/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.c336b439.chunk.css.map": "/Task_1_Merwas/static/css/main.c336b439.chunk.css.map",
+    "static/js/2.57d75acf.chunk.js.LICENSE.txt": "/Task_1_Merwas/static/js/2.57d75acf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1fedf07.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.57d75acf.chunk.js",
+    "static/css/main.c336b439.chunk.css",
+    "static/js/main.1c94e0e9.chunk.js"
+  ]
+}
