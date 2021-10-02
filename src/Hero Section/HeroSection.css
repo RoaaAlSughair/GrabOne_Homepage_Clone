@@ -66,11 +66,13 @@ body {
   justify-content: space-between;
   text-align: center;
   align-items: center;
+  gap: 1.5rem;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .order-to-subscribe{
+  min-width: fit-content;
   font-size: 1.25rem;
   font-weight: 700;
   color: #01b2ee;

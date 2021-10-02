@@ -55,10 +55,6 @@
     color: white;
 }
 
-.Newsletter{
-    width: 22rem;
-}
-
 .subscribe-by-email-icon{
     font-size: 1.5rem;
     color: #4f5864;
@@ -73,9 +69,9 @@
 }
 
 .Columns{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    column-gap: 2rem;
 }
 
 .footer-link{
@@ -112,17 +108,23 @@ ul{
     padding-left: 0;
 }
 
-@media(max-width: 48rem){
-    #copyright{
-        flex-direction: column;
-        padding-bottom: 60px;
-    }
-
+@media(max-width: 1120px){
     .FirstFooter{
         flex-direction: column-reverse;
     }
 
     .Newsletter{
         width: 100%
+    }
+}
+
+@media(max-width:644px){
+    #copyright{
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+
+    .Columns{
+        grid-template-columns: 1fr 1fr;
     }
 }
