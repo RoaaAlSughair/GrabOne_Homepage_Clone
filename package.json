@@ -1,8 +1,8 @@
 {
-  "homepage": "https://roaaalsughair.github.io/Task_1_Merwas/",
   "name": "first_task",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://roaaalsughair.github.io/Task_1_Merwas/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
