@@ -25,10 +25,10 @@ export default function HeroSection(props) {
           </p>
         </div>
       </div>
-      {/* Sidebar (incomplete) */}
+      {/* Sidebar */}
       <div className="initial-display">
         <aside className="sidebar">
-          <div className="sidebar-title">Discover</div>
+          <header className="sidebar-title">Discover</header>
           <div className="sidebar-categories">
           <ul className="side-categories">
             {categories.map((elem, i) => {

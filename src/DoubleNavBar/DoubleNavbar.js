@@ -7,13 +7,11 @@ import {
   InputGroup,
   FormControl,
 } from "react-bootstrap";
-import { FiSearch, FiShoppingCart, FiHeart } from "react-icons/fi";
+import { FiSearch, FiShoppingCart, FiHeart, FiUser, FiMail } from "react-icons/fi";
 import {
-  HiOutlineMail,
   HiOutlineLocationMarker,
   HiChevronDown,
 } from "react-icons/hi";
-import { BsPerson } from "react-icons/bs";
 import { BiChevronRight } from "react-icons/bi";
 import "./DoubleNavbar.css";
 
@@ -24,13 +22,13 @@ export default function DoubleNavbar(props) {
       {/* Blue nav */}
       <Navbar className="First-nav" variant="dark" expand="lg">
         <Container className="container">
+          {/* Logo */}
           <Container className="container brand-container">
-            {/* Logo */}
             <Navbar.Brand className="brand" href="#home">
               GrabOne
             </Navbar.Brand>
-            {/* Links and dropdown lists */}
           </Container>
+          {/* Links and dropdown lists */}
           <Container className="all-sans-logo">
             <Nav as="ul" className="nav-links">
               {/* Dropdown 1 */}
@@ -68,7 +66,7 @@ export default function DoubleNavbar(props) {
                 <NavDropdown
                   title={
                     <div className="dropdown-nav-link">
-                      <BsPerson></BsPerson>
+                      <FiUser></FiUser>
                       <HiChevronDown></HiChevronDown>
                     </div>
                   }
@@ -91,7 +89,7 @@ export default function DoubleNavbar(props) {
               <Nav.Item>
                 <Nav.Link href="#link">
                   <div className="dropdown-nav-link">
-                    <HiOutlineMail></HiOutlineMail>
+                    <FiMail></FiMail>
                     <p className="dropdown-title">Subscribe</p>
                   </div>
                 </Nav.Link>
@@ -106,7 +104,7 @@ export default function DoubleNavbar(props) {
       </Navbar>
       {/* White nav */}
       <Nav className="Second-nav">
-        <Nav.Item as="ul" className="all-sans-input-group">
+        <Container as="ul" className="all-sans-input-group">
           <Nav.Item as="li">
             {/* This dropdown needs lots of dynamic rendering */}
             <NavDropdown
@@ -153,20 +151,22 @@ export default function DoubleNavbar(props) {
               Shop Products
             </Nav.Link>
           </Nav.Item>
-        </Nav.Item>
+        </Container>
         {/* Search bar */}
-        <Nav.Item>
-          <InputGroup className="Search-bar">
-            <InputGroup.Text id="basic-addon1">
-              <FiSearch className="search-icon"></FiSearch>
-            </InputGroup.Text>
-            <FormControl
-              placeholder="Search GrabOne"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
-          </InputGroup>
-        </Nav.Item>
+        <Container>
+          <Nav.Item>
+            <InputGroup className="Search-bar">
+              <InputGroup.Text id="basic-addon1">
+                <FiSearch className="search-icon"></FiSearch>
+              </InputGroup.Text>
+              <FormControl
+                placeholder="Search GrabOne"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </InputGroup>
+          </Nav.Item>
+        </Container>
       </Nav>
     </div>
   );

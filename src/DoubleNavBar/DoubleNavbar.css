@@ -7,15 +7,14 @@
   display: flex;
   background-color: #01b2ee;
   align-items: center;
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .dropdown-nav-link {
   display: flex;
-  height: fit-content;
   flex-direction: row;
   gap: 5px;
-  justify-content: start;
 }
 
 .nav-links {
@@ -30,6 +29,15 @@
   flex-direction: row;
   align-items: flex-start;
   height: 45px;
+}
+
+/* To control first nav's icons color */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-dark:hover .navbar-nav:hover .nav-link :hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 .nav-link {
@@ -52,6 +60,7 @@
 .brand {
   font-weight: 900;
   font-size: 1.75rem;
+  margin-right: 0;
 }
 
 .brand-container {
@@ -70,17 +79,21 @@
 }
 
 .Second-nav {
-  background-color: white;
+  width: stretch;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 10px 0;
   /* Must figure out how box shadowing works */
+  box-shadow: 0 2px 2px -2px #4f5864;
 }
 
 .Search-bar {
+  width: stretch;
   align-content: center;
+  justify-self: flex-end;
 }
 
 .search-icon {
@@ -109,13 +122,19 @@
   font-weight: 500;
 }
 
-.all-sans-input-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: baseline;
+.second-nav-links:hover {
+  color: #01b2ee;
 }
 
+.all-sans-input-group {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* I need to get rid of this and replace it with "width: stretch" */
 @media (min-width: 1200px) {
   .container,
   .container-lg,

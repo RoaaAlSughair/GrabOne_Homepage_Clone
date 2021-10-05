@@ -52,7 +52,7 @@
 }
 
 .icon-link{
-    color: white;
+    color: #fff;
 }
 
 .subscribe-by-email-icon{
@@ -61,7 +61,7 @@
 }
 
 .FirstFooter{
-    background-color: white;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     padding: 1rem;
@@ -114,7 +114,7 @@ ul{
     }
 
     .Newsletter{
-        width: 100%
+        width: stretch;
     }
 }
 

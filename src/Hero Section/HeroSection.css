@@ -1,5 +1,5 @@
 body {
-  font-family: "work-sans", sans-serif;
+  font-family:"work-sans", sans-serif;
   font-size: 15px;
   background-color: #f4f7fb;
 }
@@ -10,10 +10,11 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 10px 15px 20px;
+  margin: 1rem 0;
 }
 
 .banner-image {
-  max-width: 96.5vw;
+  width: stretch;
 }
 
 .announcement {
@@ -35,19 +36,20 @@ body {
   width: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  /* gap: 2px; */
 }
 
 .sidebar-title{
   font-size: 1.5rem;
   color: #01b2ee;
   font-weight: 600;
-  background-color: white;
-  padding: 1rem;
+  background-color: #fff;
+  padding: 15px 1rem;
+  border-bottom: 1px solid #dce3ed;
 }
 
 .sidebar-categories{
-  background-color: white;
+  background-color: #fff;
   padding: 1rem;
 }
 
@@ -60,7 +62,8 @@ body {
 }
 
 .subscribe {
-  background-color: white;
+  width: stretch;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
