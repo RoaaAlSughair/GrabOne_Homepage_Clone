@@ -124,6 +124,7 @@
 
 .second-nav-links:hover {
   color: #01b2ee;
+  transition: all .15s ease-in-out;
 }
 
 .all-sans-input-group {

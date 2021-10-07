@@ -6,7 +6,7 @@
     background-color: #01b2ee;
     border-color: #01b2ee;
     color: #fff;
-    font-size: 1rem;
+    font-size: 15px;
     border-radius: 5px;
     padding: 5px 10px;
 }
@@ -79,7 +79,7 @@
 }
 
 #copyright{
-    background-color: white;
+    background-color: #fff;
     display: flex;
     font-size: 1rem;
     flex-direction: row;
@@ -88,6 +88,32 @@
     justify-content: center;
     padding: 10px;
     gap: 0.5rem;
+}
+
+.input-icon{
+    border:none;
+    background-color: inherit;
+}
+
+.keyboard-input{
+    font-size: 15px;
+    border: none;
+    padding: 0;
+}
+
+.keyboard-input:focus-within{
+    box-shadow: none;
+}
+
+.input-form{
+    box-shadow: 0 0 8px 0 rgb(80 90 100 / 15%);
+    border-radius: 8px;
+}
+
+.input-form:focus-within{
+    outline: black solid 1px;
+    border-radius: 8px;
+    box-shadow: none;
 }
 
 h4{
@@ -99,6 +125,10 @@ a{
     color: #4f5864;
     text-decoration: none;
     cursor: pointer;
+}
+
+a:hover{
+    color: #01b2ee;
 }
 
 ul{

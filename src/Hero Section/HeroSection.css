@@ -53,6 +53,11 @@ body {
   padding: 1rem;
 }
 
+.sidebar-links:hover{
+  color: #01b2ee;
+  transition: all .15s ease-in-out;
+}
+
 .side-categories{
   gap: 1rem;
 }

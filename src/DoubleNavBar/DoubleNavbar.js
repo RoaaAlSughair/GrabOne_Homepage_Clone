@@ -7,11 +7,14 @@ import {
   InputGroup,
   FormControl,
 } from "react-bootstrap";
-import { FiSearch, FiShoppingCart, FiHeart, FiUser, FiMail } from "react-icons/fi";
 import {
-  HiOutlineLocationMarker,
-  HiChevronDown,
-} from "react-icons/hi";
+  FiSearch,
+  FiShoppingCart,
+  FiHeart,
+  FiUser,
+  FiMail,
+} from "react-icons/fi";
+import { HiOutlineLocationMarker, HiChevronDown } from "react-icons/hi";
 import { BiChevronRight } from "react-icons/bi";
 import "./DoubleNavbar.css";
 
@@ -155,11 +158,12 @@ export default function DoubleNavbar(props) {
         {/* Search bar */}
         <Container>
           <Nav.Item>
-            <InputGroup className="Search-bar">
-              <InputGroup.Text id="basic-addon1">
+            <InputGroup className="Search-bar input-form">
+              <InputGroup.Text className="input-icon">
                 <FiSearch className="search-icon"></FiSearch>
               </InputGroup.Text>
               <FormControl
+                className="keyboard-input"
                 placeholder="Search GrabOne"
                 aria-label="Username"
                 aria-describedby="basic-addon1"

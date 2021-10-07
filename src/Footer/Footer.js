@@ -20,23 +20,31 @@ export default function Footer() {
               <h4>Follow us on</h4>
               <ul className="icons">
                 <li>
-                  <div  className="social-media-icon">
-                  <Link><FaFacebookF className="icon-link"></FaFacebookF></Link>
+                  <div className="social-media-icon">
+                    <Link>
+                      <FaFacebookF className="icon-link"></FaFacebookF>
+                    </Link>
                   </div>
                 </li>
                 <li>
-                <div  className="social-media-icon">
-                  <Link><FaTwitter className="icon-link"></FaTwitter></Link>
+                  <div className="social-media-icon">
+                    <Link>
+                      <FaTwitter className="icon-link"></FaTwitter>
+                    </Link>
                   </div>
                 </li>
                 <li>
-                <div  className="social-media-icon">
-                  <Link><ImInstagram className="icon-link"></ImInstagram></Link>
+                  <div className="social-media-icon">
+                    <Link>
+                      <ImInstagram className="icon-link"></ImInstagram>
+                    </Link>
                   </div>
                 </li>
                 <li>
-                <div  className="social-media-icon">
-                  <Link><FaYoutube className="icon-link"></FaYoutube></Link>
+                  <div className="social-media-icon">
+                    <Link>
+                      <FaYoutube className="icon-link"></FaYoutube>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -46,7 +54,10 @@ export default function Footer() {
               <h4>Get app exclusive deals</h4>
               {/* Add a phone icon to the download button */}
               <Link to="#">
-                <Button className="btn"><AiOutlineMobile className="btn-icon"></AiOutlineMobile> Download our App</Button>
+                <Button className="btn">
+                  <AiOutlineMobile className="btn-icon"></AiOutlineMobile>{" "}
+                  Download our App
+                </Button>
               </Link>
             </div>
           </div>
@@ -114,24 +125,25 @@ export default function Footer() {
             tailored for you.
           </p>
           {/* Subscribe form */}
-            <InputGroup>
-            <InputGroup.Text id="basic-addon1">
-            <HiOutlineMail className="subscribe-by-email-icon"></HiOutlineMail>
+          <InputGroup className="input-form">
+            <InputGroup.Text className="input-icon">
+              <HiOutlineMail className="subscribe-by-email-icon"></HiOutlineMail>
             </InputGroup.Text>
-              <FormControl
-                placeholder="Enter email address"
-                aria-label="Recipient's email"
-                aria-describedby="basic-addon2"
-              />
-              <Button id="button-addon2">
-                Subscribe
-              </Button>
-            </InputGroup>
+            <FormControl
+              className="keyboard-input"
+              placeholder="Enter email address"
+              aria-label="Recipient's email"
+              aria-describedby="basic-addon2"
+            />
+            <Button id="button-addon2">Subscribe</Button>
+          </InputGroup>
         </div>
       </div>
       {/* Copyright div */}
       <div id="copyright">
-        <Link className="footer-link" to="#">Privacy Policy</Link>
+        <Link className="footer-link" to="#">
+          Privacy Policy
+        </Link>
         <p>&copy; 2021 GrabOne Limited</p>
         <img src="https://new-cdn.grabone.co.nz/static/img/icon/powered_by_nzme_long.d08e62aa63ff.png" />
       </div>
