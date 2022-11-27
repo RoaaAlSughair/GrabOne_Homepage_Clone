@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Task_1_Merwas/static/css/main.61316885.chunk.css",
-    "main.js": "/Task_1_Merwas/static/js/main.eccfec56.chunk.js",
-    "main.js.map": "/Task_1_Merwas/static/js/main.eccfec56.chunk.js.map",
-    "runtime-main.js": "/Task_1_Merwas/static/js/runtime-main.b1fedf07.js",
-    "runtime-main.js.map": "/Task_1_Merwas/static/js/runtime-main.b1fedf07.js.map",
-    "static/css/2.f2512455.chunk.css": "/Task_1_Merwas/static/css/2.f2512455.chunk.css",
-    "static/js/2.90961a86.chunk.js": "/Task_1_Merwas/static/js/2.90961a86.chunk.js",
-    "static/js/2.90961a86.chunk.js.map": "/Task_1_Merwas/static/js/2.90961a86.chunk.js.map",
-    "index.html": "/Task_1_Merwas/index.html",
-    "static/css/2.f2512455.chunk.css.map": "/Task_1_Merwas/static/css/2.f2512455.chunk.css.map",
-    "static/css/main.61316885.chunk.css.map": "/Task_1_Merwas/static/css/main.61316885.chunk.css.map",
-    "static/js/2.90961a86.chunk.js.LICENSE.txt": "/Task_1_Merwas/static/js/2.90961a86.chunk.js.LICENSE.txt"
+    "main.css": "/GrabOne_Homepage_Clone/static/css/main.61316885.chunk.css",
+    "main.js": "/GrabOne_Homepage_Clone/static/js/main.eccfec56.chunk.js",
+    "main.js.map": "/GrabOne_Homepage_Clone/static/js/main.eccfec56.chunk.js.map",
+    "runtime-main.js": "/GrabOne_Homepage_Clone/static/js/runtime-main.0d7776ef.js",
+    "runtime-main.js.map": "/GrabOne_Homepage_Clone/static/js/runtime-main.0d7776ef.js.map",
+    "static/css/2.f2512455.chunk.css": "/GrabOne_Homepage_Clone/static/css/2.f2512455.chunk.css",
+    "static/js/2.7d6ce038.chunk.js": "/GrabOne_Homepage_Clone/static/js/2.7d6ce038.chunk.js",
+    "static/js/2.7d6ce038.chunk.js.map": "/GrabOne_Homepage_Clone/static/js/2.7d6ce038.chunk.js.map",
+    "index.html": "/GrabOne_Homepage_Clone/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/GrabOne_Homepage_Clone/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.61316885.chunk.css.map": "/GrabOne_Homepage_Clone/static/css/main.61316885.chunk.css.map",
+    "static/js/2.7d6ce038.chunk.js.LICENSE.txt": "/GrabOne_Homepage_Clone/static/js/2.7d6ce038.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b1fedf07.js",
+    "static/js/runtime-main.0d7776ef.js",
     "static/css/2.f2512455.chunk.css",
-    "static/js/2.90961a86.chunk.js",
+    "static/js/2.7d6ce038.chunk.js",
     "static/css/main.61316885.chunk.css",
     "static/js/main.eccfec56.chunk.js"
   ]
